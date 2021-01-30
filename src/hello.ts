@@ -2,8 +2,8 @@
 import { APIGatewayEvent } from "aws-lambda";
 
 export const handler = async (event: APIGatewayEvent): Promise<any> => {
-  return {
-    statusCode: 200,
-    body: "Hello world"
-  }
+  const statusCode: number = 200;
+  const body: string = "Hello world, people!";
+
+  return { statusCode, body };
 };

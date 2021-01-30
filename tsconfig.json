@@ -11,13 +11,14 @@
     "types": [
       "node"
     ],
+    "removeComments": true,
     "esModuleInterop": true,
     "inlineSourceMap": false
   },
-  "include": [
-    "./src/*"
-  ],
+  "include": ["./**/*.ts"],
   "exclude": [
-    "node_modules/*"
+    "node_modules",
+    "node_modules/**/*",
+    ".serverless/**/*"
   ]
 }
